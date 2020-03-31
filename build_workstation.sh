@@ -1,4 +1,31 @@
 
+
+CYAN="\033[0;36m"
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+function errorHandler {
+    
+    errorCode=$1
+    errorMessage=$2
+    
+    if [ $errorCode -ne 0 ]; then
+        echo -e "${RED}$errorMessage${NC}"
+        exit 1
+    fi
+    
+}
+
+
+# permissions (must be non root!)
+
+if [ !  $EUID -eq 0 ];
+then
+    echo -e "${RED}must be executed with root permissions. exiting${NC}"
+    exit 1
+fi
+
 # calculate requierd modules/softwares
 # todo - currently all
 
@@ -9,21 +36,29 @@ OS_mint=$(cat /etc/*release | grep mint)
 
 if [ ! "$OS_centos" == "" ]; then
     OS="centos";
-    source /fedora/install*
+    for f in fedora/install*; do source $f; done
+    # source /fedora/install*
 fi
 
 if [ ! "$OS_ubuntu" == "" ]; then
     OS="ubuntu";
-    source debian/install_git.sh
-    source debian/install_google_chrome.sh
-    source debian/install_vscode.sh
+    for f in debian/install*; do source $f; done
+    # source debian/install*
 fi
 
-if [ ! $OS_mint == "" ]; then
-    OS="mint";
-fi
+
 
 echo "OS: $OS"
+
+PACKAGE_LIST = ( git, docker, docker_compose, slack, google_chrome, node, postman, vpn_client, vscode, clion, virtualbox )
+
+# Read the array values with space
+for PACKAGE in "${PACKAGE_LIST[@]}"; do
+    echo -e "${CYAN}installing  $PACKAGE"
+    install_$PACKAGE
+    errorHandler $? "failed installing $PACKAGE"
+done
+
 
 # import relevant modules/function
 

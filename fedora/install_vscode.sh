@@ -1,15 +1,26 @@
-#!/usr/bin/env bash
+#! /bin/bash
 
-# permissions (must be non root!)
+function install_vscode() {
+    cd /tpm
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
-if [  $EUID -eq 0 ];
-then
-    echo -e "${RED}must be executed with no root permissions. exiting${NC}"
-    exit 1
-fi
+    REPO=vscode.repo
+    touch $REPO
+    chown root:root $REPO
+    REPO_PATH=/etc/yum.repos.d/$REPO
+    sudo cat << EO_REPO > $REPO
+[code]
+name=Visual Studio Code
+baseurl=https://packages.microsoft.com/yumrepos/vscode
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+EO_REPO
 
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+    sudo mv $REPO $REPO_PATH
+    # sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+    yum check-update
+    sudo yum install code -y
 
-yum check-update
-sudo yum install code
+    cd -
+}

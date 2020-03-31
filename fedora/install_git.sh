@@ -1,6 +1,8 @@
-#!/usr/bin/env bash
+#! /bin/bash
 
-sudo yum install https://centos7.iuscommunity.org/ius-release.rpm
-sudo yum erase git
-sudo yum install epel-release 
-sudo yum install git2u
+function install_git() {
+    sudo yum install https://centos7.iuscommunity.org/ius-release.rpm -y
+    sudo yum erase git
+    sudo yum install epel-release -y
+    sudo yum install git2u -y
+}
