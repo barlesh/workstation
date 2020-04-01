@@ -1,7 +1,7 @@
 #! /bin/bash
 
 function install_vscode() {
-    cd /tpm
+    cd /tmp
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
     REPO=vscode.repo
