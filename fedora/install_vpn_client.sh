@@ -1,6 +1,7 @@
 #! /bin/bash
 
 function install_vpn_client() {
-    sudo mkdir /opt/fortinetvpnssl
-    tar -xvf fedora/rpm/forticlientsslvpn_linux_4-0-2281-tar.gz -C /opt/fortinetvpnssl/
+    sudo tar -xvf linux_apps/forti.tar -C /opt/
+    sudo chmod +x /opt/forticlient-sslvpn/forticlientsslvpn.sh
+    sudo ln -s /opt/forticlient-sslvpn/forticlientsslvpn.sh /usr/local/bin/vpn
 }
