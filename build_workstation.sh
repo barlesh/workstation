@@ -36,7 +36,7 @@ OS_mint=$(cat /etc/*release | grep mint)
 
 if [ ! "$OS_centos" == "" ]; then
     OS="centos";
-    for f in fedora/install*; do source $f; done
+    for f in fedora/install*; do echo "source $f"; source $f; done
     # source /fedora/install*
 fi
 
@@ -50,11 +50,11 @@ fi
 
 echo "OS: $OS"
 
-PACKAGE_LIST = ( git, docker, docker_compose, slack, google_chrome, node, postman, vpn_client, vscode, clion, virtualbox )
-
+PACKAGE_LIST=( git docker docker_compose slack google_chrome node postman vpn_client vscode clion virtualbox )
+# echo "PACKAGE_LIST: $PACKAGE_LIST"
 # Read the array values with space
 for PACKAGE in "${PACKAGE_LIST[@]}"; do
-    echo -e "${CYAN}installing  $PACKAGE"
+    echo -e "${CYAN}installing  $PACKAGE${NC}"
     install_$PACKAGE
     errorHandler $? "failed installing $PACKAGE"
 done
