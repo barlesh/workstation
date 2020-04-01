@@ -50,7 +50,8 @@ fi
 
 echo "OS: $OS"
 
-PACKAGE_LIST=( git docker docker_compose slack google_chrome node postman vpn_client vscode clion virtualbox )
+# PACKAGE_LIST=( git docker docker_compose slack google_chrome node postman vpn_client vscode clion virtualbox )
+PACKAGE_LIST=( git docker docker_compose slack google_chrome postman vpn_client vscode clion virtualbox )
 # echo "PACKAGE_LIST: $PACKAGE_LIST"
 # Read the array values with space
 for PACKAGE in "${PACKAGE_LIST[@]}"; do
