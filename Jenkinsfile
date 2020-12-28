@@ -5,7 +5,7 @@ pipeline {
   }
   stages {
     stage('checkout project') {
-        step {
+        steps {
             sh "echo 'should I scm?'"
         }
         
