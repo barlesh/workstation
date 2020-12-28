@@ -5,6 +5,9 @@ pipeline {
   }
   stages {
     stage('checkout project') {
+        step {
+            sh "echo 'should I scm?'"
+        }
         
     }
     stage('install scanners') {
