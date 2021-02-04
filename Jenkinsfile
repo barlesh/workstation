@@ -19,5 +19,15 @@ pipeline {
         sh "./build.sh" 
       }
     }
+    stage('test') {
+      steps {
+        sh "./test.sh" 
+      }
+    }
+    stage('deploy') {
+      steps {
+        sh "./deploy.sh" 
+      }
+    }
   }
 }
