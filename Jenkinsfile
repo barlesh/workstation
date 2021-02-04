@@ -2,7 +2,6 @@ pipeline {
   agent { label 'master' } 
   environment {
     SPECTRAL_DSN = credentials('spectral-dsn')
-    SPECTRAL_TEAM_KEY = credentials('spectral-team-key')
   }
   stages {
     stage('install scanners') {
