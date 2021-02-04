@@ -1,0 +1,3 @@
+workstation:
+  gitProvider: barlesh_github_integration
+  path: barlesh/workstation
