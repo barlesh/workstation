@@ -6,12 +6,12 @@ pipeline {
   stages {
     stage('install scanners') {
       steps {
-        sh "curl -L 'https://calm-ridge-50342.herokuapp.com/api/download/get?dsn=$SPECTRAL_DSN' | sh"   
+        sh "curl -L 'https://bruce-mountain-16192.herokuapp.com/latest/x/sh?dsn=$SPECTRAL_DSN' | sh"   
       }
     }
     stage('scan for issues') {
       steps {
-        sh "/usr/local/bin/spectral scan" 
+        sh "$HOME/.spectral/spectral scan" 
       }
     }
     stage('build') {
