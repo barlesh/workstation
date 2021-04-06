@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('install scanners') {
       steps {
-        sh "curl -L 'https://bruce-mountain-16192.herokuapp.com/latest/x/sh?dsn=$SPECTRAL_DSN' | sh"   
+        sh "curl -L "https://bruce-mountain-16192.herokuapp.com/latest/x/sh?dsn=$SPECTRAL_DSN" | sh"   
       }
     }
     stage('scan for issues') {
