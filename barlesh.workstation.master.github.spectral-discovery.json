@@ -1,0 +1,222 @@
+{
+    "actions": {
+        "permissions": {
+            "allowed_actions": "all",
+            "enabled": true
+        },
+        "selected_actions": null
+    },
+    "branches": {
+        "master": {
+            "branch_protection": {
+                "allow_deletions": {
+                    "enabled": false
+                },
+                "allow_force_pushes": {
+                    "enabled": false
+                },
+                "enabled": false,
+                "enforce_admins": {
+                    "enabled": false,
+                    "url": "https://api.github.com/repos/barlesh/workstation/branches/master/protection/enforce_admins"
+                },
+                "required_conversation_resolution": {
+                    "enabled": false
+                },
+                "required_linear_history": {
+                    "enabled": true
+                },
+                "required_pull_request_reviews": {
+                    "dismiss_stale_reviews": false,
+                    "require_code_owner_reviews": false,
+                    "required_approving_review_count": 1,
+                    "url": "https://api.github.com/repos/barlesh/workstation/branches/master/protection/required_pull_request_reviews"
+                },
+                "required_signatures": {
+                    "enabled": false,
+                    "url": "https://api.github.com/repos/barlesh/workstation/branches/master/protection/required_signatures"
+                },
+                "required_status_checks": null,
+                "restrictions": null,
+                "url": "https://api.github.com/repos/barlesh/workstation/branches/master/protection"
+            }
+        }
+    },
+    "collaborators": [
+        {
+            "avatar_url": "https://avatars.githubusercontent.com/u/10618212?v=4",
+            "events_url": "https://api.github.com/users/barlesh/events{/privacy}",
+            "followers_url": "https://api.github.com/users/barlesh/followers",
+            "following_url": "https://api.github.com/users/barlesh/following{/other_user}",
+            "gists_url": "https://api.github.com/users/barlesh/gists{/gist_id}",
+            "html_url": "https://github.com/barlesh",
+            "id": 10618212,
+            "login": "barlesh",
+            "node_id": "MDQ6VXNlcjEwNjE4MjEy",
+            "organizations_url": "https://api.github.com/users/barlesh/orgs",
+            "permissions": {
+                "admin": true,
+                "pull": true,
+                "push": true
+            },
+            "received_events_url": "https://api.github.com/users/barlesh/received_events",
+            "repos_url": "https://api.github.com/users/barlesh/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/barlesh/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/barlesh/subscriptions",
+            "type": "User",
+            "url": "https://api.github.com/users/barlesh"
+        },
+        {
+            "avatar_url": "https://avatars.githubusercontent.com/u/31233967?v=4",
+            "events_url": "https://api.github.com/users/moshe-kabala/events{/privacy}",
+            "followers_url": "https://api.github.com/users/moshe-kabala/followers",
+            "following_url": "https://api.github.com/users/moshe-kabala/following{/other_user}",
+            "gists_url": "https://api.github.com/users/moshe-kabala/gists{/gist_id}",
+            "html_url": "https://github.com/moshe-kabala",
+            "id": 31233967,
+            "login": "moshe-kabala",
+            "node_id": "MDQ6VXNlcjMxMjMzOTY3",
+            "organizations_url": "https://api.github.com/users/moshe-kabala/orgs",
+            "permissions": {
+                "admin": false,
+                "pull": true,
+                "push": true
+            },
+            "received_events_url": "https://api.github.com/users/moshe-kabala/received_events",
+            "repos_url": "https://api.github.com/users/moshe-kabala/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/moshe-kabala/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/moshe-kabala/subscriptions",
+            "type": "User",
+            "url": "https://api.github.com/users/moshe-kabala"
+        }
+    ],
+    "invitations": [],
+    "keys": [],
+    "repo": {
+        "allow_auto_merge": false,
+        "allow_merge_commit": true,
+        "allow_rebase_merge": true,
+        "allow_squash_merge": true,
+        "anonymous_access_enabled": false,
+        "archive_url": "https://api.github.com/repos/barlesh/workstation/{archive_format}{/ref}",
+        "archived": false,
+        "assignees_url": "https://api.github.com/repos/barlesh/workstation/assignees{/user}",
+        "blobs_url": "https://api.github.com/repos/barlesh/workstation/git/blobs{/sha}",
+        "branches_url": "https://api.github.com/repos/barlesh/workstation/branches{/branch}",
+        "clone_url": "https://github.com/barlesh/workstation.git",
+        "collaborators_url": "https://api.github.com/repos/barlesh/workstation/collaborators{/collaborator}",
+        "comments_url": "https://api.github.com/repos/barlesh/workstation/comments{/number}",
+        "commits_url": "https://api.github.com/repos/barlesh/workstation/commits{/sha}",
+        "compare_url": "https://api.github.com/repos/barlesh/workstation/compare/{base}...{head}",
+        "contents_url": "https://api.github.com/repos/barlesh/workstation/contents/{+path}",
+        "contributors_url": "https://api.github.com/repos/barlesh/workstation/contributors",
+        "created_at": "2019-02-04T13:52:00Z",
+        "default_branch": "master",
+        "delete_branch_on_merge": false,
+        "deployments_url": "https://api.github.com/repos/barlesh/workstation/deployments",
+        "disabled": false,
+        "downloads_url": "https://api.github.com/repos/barlesh/workstation/downloads",
+        "events_url": "https://api.github.com/repos/barlesh/workstation/events",
+        "fork": false,
+        "forks_url": "https://api.github.com/repos/barlesh/workstation/forks",
+        "full_name": "barlesh/workstation",
+        "git_commits_url": "https://api.github.com/repos/barlesh/workstation/git/commits{/sha}",
+        "git_refs_url": "https://api.github.com/repos/barlesh/workstation/git/refs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/barlesh/workstation/git/tags{/sha}",
+        "git_url": "git://github.com/barlesh/workstation.git",
+        "has_downloads": true,
+        "has_issues": true,
+        "has_pages": false,
+        "has_projects": true,
+        "has_wiki": true,
+        "hooks_url": "https://api.github.com/repos/barlesh/workstation/hooks",
+        "html_url": "https://github.com/barlesh/workstation",
+        "id": 169085564,
+        "is_template": false,
+        "issue_comment_url": "https://api.github.com/repos/barlesh/workstation/issues/comments{/number}",
+        "issue_events_url": "https://api.github.com/repos/barlesh/workstation/issues/events{/number}",
+        "issues_url": "https://api.github.com/repos/barlesh/workstation/issues{/number}",
+        "keys_url": "https://api.github.com/repos/barlesh/workstation/keys{/key_id}",
+        "labels_url": "https://api.github.com/repos/barlesh/workstation/labels{/name}",
+        "language": "Shell",
+        "languages_url": "https://api.github.com/repos/barlesh/workstation/languages",
+        "merges_url": "https://api.github.com/repos/barlesh/workstation/merges",
+        "milestones_url": "https://api.github.com/repos/barlesh/workstation/milestones{/number}",
+        "name": "workstation",
+        "node_id": "MDEwOlJlcG9zaXRvcnkxNjkwODU1NjQ=",
+        "notifications_url": "https://api.github.com/repos/barlesh/workstation/notifications{?since,all,participating}",
+        "owner": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/10618212?v=4",
+            "events_url": "https://api.github.com/users/barlesh/events{/privacy}",
+            "followers_url": "https://api.github.com/users/barlesh/followers",
+            "following_url": "https://api.github.com/users/barlesh/following{/other_user}",
+            "gists_url": "https://api.github.com/users/barlesh/gists{/gist_id}",
+            "html_url": "https://github.com/barlesh",
+            "id": 10618212,
+            "login": "barlesh",
+            "node_id": "MDQ6VXNlcjEwNjE4MjEy",
+            "organizations_url": "https://api.github.com/users/barlesh/orgs",
+            "received_events_url": "https://api.github.com/users/barlesh/received_events",
+            "repos_url": "https://api.github.com/users/barlesh/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/barlesh/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/barlesh/subscriptions",
+            "type": "User",
+            "url": "https://api.github.com/users/barlesh"
+        },
+        "permissions": {
+            "admin": true,
+            "pull": true,
+            "push": true
+        },
+        "private": false,
+        "pulls_url": "https://api.github.com/repos/barlesh/workstation/pulls{/number}",
+        "pushed_at": "2021-04-06T16:36:55Z",
+        "releases_url": "https://api.github.com/repos/barlesh/workstation/releases{/id}",
+        "size": 12846,
+        "ssh_url": "git@github.com:barlesh/workstation.git",
+        "stargazers_url": "https://api.github.com/repos/barlesh/workstation/stargazers",
+        "statuses_url": "https://api.github.com/repos/barlesh/workstation/statuses/{sha}",
+        "subscribers_count": 1,
+        "subscribers_url": "https://api.github.com/repos/barlesh/workstation/subscribers",
+        "subscription_url": "https://api.github.com/repos/barlesh/workstation/subscription",
+        "svn_url": "https://github.com/barlesh/workstation",
+        "tags_url": "https://api.github.com/repos/barlesh/workstation/tags",
+        "teams_url": "https://api.github.com/repos/barlesh/workstation/teams",
+        "trees_url": "https://api.github.com/repos/barlesh/workstation/git/trees{/sha}",
+        "updated_at": "2021-02-04T14:45:20Z",
+        "url": "https://api.github.com/repos/barlesh/workstation",
+        "visibility": "public"
+    },
+    "schema": "spectral/schema/ohai-github",
+    "vulnerability_alerts_enabled": true,
+    "webhooks": [
+        {
+            "active": true,
+            "config": {
+                "content_type": "json",
+                "insecure_ssl": "1",
+                "secret": "********",
+                "url": "https://gitlab.com/api/v4/projects/23143428/mirror/pull"
+            },
+            "created_at": "2020-12-16T13:09:53Z",
+            "deliveries_url": "https://api.github.com/repos/barlesh/workstation/hooks/269098730/deliveries",
+            "events": [
+                "pull_request",
+                "push"
+            ],
+            "id": 269098730,
+            "last_response": {
+                "status": "unused"
+            },
+            "name": "web",
+            "ping_url": "https://api.github.com/repos/barlesh/workstation/hooks/269098730/pings",
+            "test_url": "https://api.github.com/repos/barlesh/workstation/hooks/269098730/test",
+            "type": "Repository",
+            "updated_at": "2020-12-16T13:09:53Z",
+            "url": "https://api.github.com/repos/barlesh/workstation/hooks/269098730"
+        }
+    ]
+}
